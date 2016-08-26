@@ -14,7 +14,7 @@ With this package you can manage header Meta Tags from Laravel controllers.
 From the command line run
 
 ```
-$ composer require torann/laravel-meta-tags
+$ composer require provision/laravel-meta-tags
 ```
 
 Once Meta Tags is installed you need to register the service provider with the application. Open up `config/app.php` and find the `providers` key.
