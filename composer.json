@@ -1,16 +1,12 @@
 {
-  "name": "torann/laravel-meta-tags",
+  "name": "provision/laravel-meta-tags",
   "keywords": ["meta tags", "meta", "tags", "head", "laravel"],
   "description": "A package to manage Header Meta Tags",
   "license": "MIT",
   "authors": [
     {
-      "name": "Lito",
-      "email": "lito@eordes.com"
-    },
-    {
-      "name": "Daniel Stainback",
-      "email": "daniel@lyften.com"
+      "name": "Venelin Iliev",
+      "email": "venelin@provision.bg"
     }
   ],
   "require": {
