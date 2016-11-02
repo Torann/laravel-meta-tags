@@ -232,21 +232,32 @@ class MetaTag
     }
 
     /**
+     * Set the title. The configured site title is appended when appropriate.
+     *
      * @param  string $value
      * @return string
      */
     private function setTitle($value)
     {
-        $title = $this->title;
+        // The configured site title is the base title
+        $title = $this->config['title'];
+        // Default limit is to pass to cut()
+        $limit = 'title';
+        if (!$title || $title === $value) {
+            // Don't append anything to the provided value, title is empty
+            // or the same as the provided value
+            return $this->metas['title'] = self::cut($value, $limit);
+        }
 
-        if ($title && $this->config['title_limit']) {
-            $title = ' - '.$title;
+        // Concat configured separator and base title
+        $title = sprintf(' %s %s', $this->config['title_separator'], $title);
+
+        if ($this->config['title_limit']) {
+            // Deduct append value from the title limit
             $limit = $this->config['title_limit'] - strlen($title);
         }
-        else {
-            $limit = 'title';
-        }
 
+        // Set and return the concatenated title value
         return $this->metas['title'] = self::cut($value, $limit).$title;
     }
 

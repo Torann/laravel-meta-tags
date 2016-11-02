@@ -32,6 +32,9 @@ class MetaTagsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $configPath = __DIR__ . '/../../config/config.php';
+        $this->mergeConfigFrom($configPath, 'meta-tags');
+
         $this->app['metatag'] = $this->app->share(function ($app) {
             return new MetaTag(
                 $app['request'],
