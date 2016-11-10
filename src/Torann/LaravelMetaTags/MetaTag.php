@@ -265,7 +265,7 @@ class MetaTag
 
         $attributes = implode(' ', $attributes);
 
-        return "<meta {$attributes}>\n    ";
+        return "<meta {$attributes}>";
     }
 
     /**
