@@ -21,7 +21,7 @@ class MetaTagsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('meta-tags.php')
+            __DIR__ . '/../../config/config.php' => config_path('meta-tags.php')
         ]);
     }
 
@@ -32,7 +32,7 @@ class MetaTagsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['metatag'] = $this->app->singleton(function ($app) {
+        $this->app->singleton('metatag', function ($app) {
             return new MetaTag(
                 $app['request'],
                 $app['config']['meta-tags'],
