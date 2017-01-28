@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\LaravelMetaTags;
+namespace ProVision\MetaTags;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

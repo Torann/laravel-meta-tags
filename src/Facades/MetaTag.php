@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\LaravelMetaTags\Facades;
+namespace ProVision\MetaTags\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class MetaTag extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'metatag';
+        return 'MetaTag';
     }
 }

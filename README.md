@@ -22,7 +22,7 @@ Once Meta Tags is installed you need to register the service provider with the a
 ```php
 'providers' => array(
 
-    Torann\LaravelMetaTags\MetaTagsServiceProvider::class,
+    ProVision\MetaTags\MetaTagsServiceProvider::class,
 
 )
 ```
@@ -32,7 +32,7 @@ Meta Tags also ships with a facade which provides the static syntax for creating
 ```php
 'aliases' => array(
 
-    'MetaTag'   => Torann\LaravelMetaTags\Facades\MetaTag::class,
+    'MetaTag'   => ProVision\MetaTags\Facades\MetaTag::class,
 
 )
 ```
@@ -42,7 +42,7 @@ Meta Tags also ships with a facade which provides the static syntax for creating
 Run this on the command line from the root of your project:
 
 ```
-$ php artisan vendor:publish --provider="Torann\LaravelMetaTags\MetaTagsServiceProvider"
+$ php artisan vendor:publish --provider="ProVision\MetaTags\MetaTagsServiceProvider"
 ```
 
 A configuration file will be publish to `config/meta-tags.php`.
