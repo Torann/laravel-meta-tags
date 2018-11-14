@@ -25,5 +25,15 @@
     "psr-4": {
       "Torann\\LaravelMetaTags\\": "src/Torann/LaravelMetaTags/"
     }
-  }
+  },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Torann\\LaravelMetaTags\\MetaTagsServiceProvider"
+            ],
+            "aliases": {
+                "MetaTag": "Torann\\LaravelMetaTags\\Facades\\MetaTag"
+            }
+        }
+    }
 }
