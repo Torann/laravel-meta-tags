@@ -35,5 +35,5 @@
                 "MetaTag": "LaravelMetaTags\\Facades\\MetaTag"
             }
         }
-    },
+    }
 }
