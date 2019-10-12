@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Toran\\LaravelMetaTags\\MetaTagsServiceProvider"
+                "LaravelMetaTags\\MetaTagsServiceProvider"
             ],
             "aliases": {
                 "MetaTag": "LaravelMetaTags\\Facades\\MetaTag"
